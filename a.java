@@ -1,6 +1,5 @@
 import java.util.*;
-
-public class BitManipulation {
+public class a {
 
     static void GetBit(int n, int pos) {
         int bitMask = 1 << pos;
@@ -14,17 +13,17 @@ public class BitManipulation {
 
     static void SetBit(int n, int pos) {
         String org = Integer.toBinaryString(n);
-        System.out.println("The orginal number " + org);
+        System.out.println("The original number " + org);
         int bitmask = 1 << pos;
         int number = bitmask | n;
         String modified = Integer.toBinaryString(number);
-        System.out.print("The modified number:");
+        System.out.print("The modified number: ");
         System.out.println(modified);
     }
 
     static void ClearBit(int n, int pos) {
         String org = Integer.toBinaryString(n);
-        System.out.println("The orginal: " + org);
+        System.out.println("The original: " + org);
         int bitmask = 1 << pos;
         int not = ~bitmask;
         int number = n & not;
@@ -56,7 +55,7 @@ public class BitManipulation {
         int n, pos;
         Scanner sc = new Scanner(System.in);
         do {
-            System.out.print("\n1.Getbit\n2.SetBit\n3.ClearBit\n4.Update Bit\n ");
+            System.out.print("0.Exit\n1.Getbit\n2.SetBit\n3.ClearBit\n4.Update Bit\n ");
             System.out.println("Enter a choice: ");
             int choice = sc.nextInt();
             System.out.println("Enter number:");
@@ -77,10 +76,11 @@ public class BitManipulation {
                     UpdateBit(n, pos);
                     break;
                 default:
-                sc.close();
-                System.exit(0);
+                    sc.close();
+                    System.exit(0);
                     break;
             }
         } while (true);
     }
 }
+
