@@ -31,5 +31,6 @@ public class Strings {
         String name = sentence.substring(1,sentence.length());
         System.out.println(name);
         sc.close();
+        
     }
 }
