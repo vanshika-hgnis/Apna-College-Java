@@ -5,7 +5,7 @@ public class LinkedList {
     private Node head;
     static int size;
 
-    LinkedList(){[ ]
+    LinkedList(){
         size = 0;
     }
     class Node {
