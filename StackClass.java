@@ -37,6 +37,15 @@ public class StackClass {
         }
     }
     public static void main(String args[]){
-
+        Stack s = new Stack();
+        s.push(1);
+        s.push(14);
+        s.push(14);
+        s.push(1344);
+        s.push(34);
+        while(!s.IsEmpty()){
+            System.out.println(s.peek());
+            s.pop();
+        }
     }
 }
