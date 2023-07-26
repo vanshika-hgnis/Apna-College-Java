@@ -21,9 +21,9 @@ public class Hashing {
         }
 
         System.out.println(set);
-        set.add(4 1);
+        set.add(41);
         set.add(34);
-        Iterator it = set.iterator();
+        Iterator<Integer>it = set.iterator();
         // System.out.println(it.next());
         // System.out.println(it.next());
         // System.out.println(it.next());
